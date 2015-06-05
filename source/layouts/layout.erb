@@ -16,9 +16,12 @@
 
   <body class="<%= page_classes %>">
     <header class="global-header">
-      <div class="global-header__logo"><img src="../images/halenohi_logo.png" alt="ハレノヒロゴ"></div>
+      <div class="global-header__logo"><a href="https://www.halenohi.jp/"><img src="../images/halenohi_logo.png" alt="ハレノヒロゴ"></a></div>
       <div class="global-header__bloglogo"><img src="../images/halenohiblog_logo.png" alt="ハレノヒブログロゴ"></div>
-      <div class="global-header__sns"><i class="fa fa-twitter"></i><i class="fa fa-facebook"></i></div>
+      <div class="global-header__sns">
+        <a href="https://twitter.com/halenohi_jp"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/halenohiinc"><i class="fa fa-facebook"></i></a>
+      </div>
     </header>
 
     <%= yield %>
