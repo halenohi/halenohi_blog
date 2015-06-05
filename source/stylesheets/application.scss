@@ -1,0 +1,10 @@
+@import 'compass/reset/utilities';
+@include global-reset;
+
+@import 'compass/utilities/general/clearfix';
+@import 'compass/css3';
+
+@import 'common/frame';
+
+@import 'modules/global-header';
+@import 'modules/global-footer';
