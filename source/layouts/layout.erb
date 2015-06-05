@@ -11,18 +11,67 @@
 
     <%= stylesheet_link_tag "normalize", "application" %>
     <%= javascript_include_tag  "all" %>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body class="<%= page_classes %>">
     <header class="global-header">
-      global-heder
+      <div class="global-header__logo"><img src="../images/halenohi_logo.png" alt="ハレノヒロゴ"></div>
+      <div class="global-header__bloglogo"><img src="../images/halenohiblog_logo.png" alt="ハレノヒブログロゴ"></div>
+      <div class="global-header__sns"><i class="fa fa-twitter"></i><i class="fa fa-facebook"></i></div>
     </header>
 
     <%= yield %>
-
-    <footer class="global-footer">
-      global-footer
-    </footer>
+  <footer>
+    <div class="global-footer">
+      <div class="global-footer__container">
+          <div class="global-footer__container__info">
+            <div class="footer_logo"><img src="../images/footer_logo.png" alt="ハレノヒロゴ" /></div>
+            <div class="footer_description">
+              <p>株式会社ハレノヒ</p>
+              <p>〒150-0001</p>
+              <p>東京都渋谷区神宮前3-32-2</p>
+              <p>K's Apartment 101</p>
+            </div>
+          </div>
+          <div class="footer_link">
+            <ul>
+              <li>About</li>
+              <li>Ourworks</li>
+              <li>Workflow</li>
+              <li>Privacypolicy</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      <div class="global-footer__container">
+      <ul>
+        <li>山形孝造</li>
+        <li>森田望</li>
+      </ul>
+      <ul>
+        <li>matsuda</li>
+        <li>yamaguchi</li>
+      </ul>
+      </div>
+      <div class="global-footer__container">
+        <div class="fb-page" data-href="https://www.facebook.com/halenohiinc?fref=ts"
+        data-width="346" data-height="260" data-hide-cover="false" data-show-facepile="true"
+        data-show-posts="true"><div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/halenohiinc?fref=ts">
+        <a href="https://www.facebook.com/halenohiinc?fref=ts">株式会社ハレノヒ</a></blockquote></div></div>
+      </div>
+    </div>
+  </footer>
+    <div class="copyrights"><small>(c) halenohi, inc. All Rights Reserved.</small></div>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   </body>
 
 </html>

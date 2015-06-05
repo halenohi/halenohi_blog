@@ -1,3 +1,29 @@
 .global-header {
-  background-color: #eee;
+  @include pie-clearfix;
+  background-color: #fff;
+  position: relative;
+
+  .global-header__logo {
+    float: left;
+    margin-left: 18px;
+  }
+
+  .global-header__bloglogo {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  .global-header__sns {
+    font-size: 18px;
+    float: right;
+    color: #b5b5b5;
+    padding: 6px;
+    .fa {
+      margin-right: 18px;
+      &:before { color: #999; }
+    }
+  }
 }

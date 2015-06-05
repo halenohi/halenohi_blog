@@ -1,3 +1,41 @@
+footer{
+  width: 100%;
+  background-color: #e1e1e1;
+}
+
 .global-footer {
-  background-color: #999;
+  width: 1040px;
+  height: 360px;
+  padding-top: 24px;
+  background-color: #e1e1e1;
+  margin: 0 auto;
+}
+
+.global-footer__container{
+  width: 346px;
+  float: left;
+}
+
+.footer_logo{
+  float: left;
+}
+
+.footer_description{
+  float: left;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-left: 9px;
+}
+
+.footer_link{
+  font-size: 14px;
+  clear: both;
+  line-height: 1.5;
+  padding-top: 9px;
+}
+
+.copyrights{
+  font-size: 12px;
+  padding: 6px;
+  text-align: center;
 }
