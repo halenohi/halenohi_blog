@@ -1,6 +1,8 @@
 footer{
   width: 100%;
   background-color: #e1e1e1;
+  margin-top: 30px;
+  clear: both;
 }
 
 .global-footer {
@@ -11,30 +13,35 @@ footer{
   margin: 0 auto;
 }
 
-.global-footer__container{
+.global-footer__container {
   width: 346px;
   float: left;
+  img{
+    vertical-align: middle;
+    margin-right: 9px;
+  }
 }
 
-.footer_logo{
+.footer_logo {
   float: left;
 }
 
-.footer_description{
+.footer_description {
   float: left;
   font-size: 14px;
   line-height: 1.4;
   margin-left: 9px;
 }
 
-.footer_link{
+.footer_link {
   font-size: 14px;
+  font-weight: bold;
   clear: both;
   line-height: 1.5;
   padding-top: 9px;
 }
 
-.copyrights{
+.copyrights {
   font-size: 12px;
   padding: 6px;
   text-align: center;

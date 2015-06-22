@@ -6,6 +6,7 @@ a:hover{
   @include pie-clearfix;
   background-color: #fff;
   position: relative;
+  padding-top: 3px;
 
   .global-header__logo {
     float: left;
@@ -15,7 +16,7 @@ a:hover{
   .global-header__blog-logo {
     width: 100px;
     position: absolute;
-    top: 0px;
+    top: 3px;
     left: 50%;
     margin-left: -50px;
   }
