@@ -1,0 +1,25 @@
+.pagination {
+  position: relative;
+  width: 692px;
+  height: 90px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.pagination ol {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  display: table;
+}
+
+.pagination li {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  a {
+    padding: 9px;
+  }
+}

@@ -26,8 +26,10 @@ a:hover{
     float: right;
     color: #b5b5b5;
     padding: 6px;
+
     .fa {
       margin-right: 18px;
+
       &:before { color: #999; }
     }
   }

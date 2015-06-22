@@ -5,6 +5,13 @@
 @import 'compass/css3';
 
 @import 'common/frame';
+@import 'modules/font';
 
 @import 'modules/global-header';
 @import 'modules/global-footer';
+@import 'modules/main-contents';
+@import 'modules/entry';
+@import 'modules/side-contents';
+@import 'modules/pagination';
+
+@import 'modules/single'

@@ -1,0 +1,79 @@
+.side-contents {
+  width: 330px;
+  margin-top: 30px;
+  float: right;
+  font-size :16px;
+}
+
+.advertising {
+  width: 180px;
+  height: 150px;
+  margin: 0 auto;
+  background :gray;
+}
+
+.side-contents__panel {
+  @include pie-clearfix;
+  margin-top: 24px;
+
+  .side-contents__panel__title {
+    padding-bottom: 9px;
+    border-bottom: solid 1px #000;
+
+    .fa-fw {
+      padding-right: 12px;
+    }
+
+    img {
+      padding-right: 12px;
+      vertical-align: middle;
+    }
+  }
+
+  .side-contents__panel__list {
+    font-size: 14px;
+    line-height: 2.0;
+
+    .side-contents__panel__list__item {
+      margin-top: 12px;
+      padding-left: 9px;
+    }
+
+      .label-release {
+        border-left: 14px solid #ff6f76;
+      }
+
+      .label-develop {
+        border-left: 14px solid #62c9eb;
+      }
+
+      .label-design {
+        border-left: 14px solid #ff9969;
+      }
+
+      .label-others {
+        border-left: 14px solid #ffe581;
+      }
+
+      .label-training {
+        border-left: 14px solid #13ad67;
+      }
+  }
+
+  .side-contents__panel__tag-list {
+    height: 200px;
+
+    li {
+    float: left;
+    }
+
+    img{
+    margin: 6px 6px 0 0;
+    }
+  }
+
+  .side-contents__panel__timeline {
+    padding-top: 24px;
+  }
+
+}

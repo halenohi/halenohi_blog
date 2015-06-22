@@ -4,59 +4,58 @@ title: ハレノヒブログ
 
 <div class="container">
   <div class="main-contents">
-   <div class="entry">
-     <div class="eyecatch">
+   <div class="main-contents__entry">
+     <div class="main-contents__entry__eyecatch">
        <a href=""><img src="..//images/entry_img1.png" alt="" /></a>
      </div>
-     <div class="entry-info">
-       <div class="category">
+     <div class="main-contents__entry__info">
+       <div class="main-contents__entry__info__category">
          <img src="../images/category-1.png" alt="" />開発日記
        </div>
-       <div class="title">
+       <div class="main-contents__entry__info__title">
          <h1><a href="single.html">Railsで複数のasset_hostを動的に切り替える方法</a></h1>
        </div>
-       <div class="post">
-         <div class="tag">
+       <div class="main-contents__entry__info__post">
+         <div class="main-contents__entry__info__post__tag">
            <i class="fa fa-tag"></i>asset_sync,rails,ruby
          </div>
-         <div class="date">
+         <div class="main-contents__entry__info__post__date">
            Posted on 2014.08.26
          </div>
-         <div class="author">
+         <div class="main-contents__entry__info__post__author">
+         <img src="../images/author_dummy.png" alt="" />山形 孝造
+         </div>
+       </div>
+     </div>
+   </div>
+   <% 5.times do %>
+   <div class="main-contents__entry">
+     <div class="main-contents__entry__eyecatch">
+       <a href=""><img src="..//images/entry_img1.png" alt="" /></a>
+     </div>
+     <div class="main-contents__entry__info">
+       <div class="main-contents__entry__info__category">
+         <img src="../images/category-1.png" alt="" />開発日記
+       </div>
+       <div class="main-contents__entry__info__title">
+         <h1><a href="single.html">Railsで複数のasset_hostを動的に切り替える方法</a></h1>
+       </div>
+       <div class="main-contents__entry__info__post">
+         <div class="main-contents__entry__info__post__tag">
+           <i class="fa fa-tag"></i>asset_sync,rails,ruby
+         </div>
+         <div class="main-contents__entry__info__post__date">
+           Posted on 2014.08.26
+         </div>
+         <div class="main-contents__entry__info__post__author">
          <img src="../images/author_dummy.png" alt="" />山形 孝造
          </div>
        </div>
 
      </div>
    </div>
-   <% 5.times do %>
-     <div class="entry">
-       <div class="eyecatch">
-         <img src="..//images/entry_img1.png" alt="" />
-       </div>
-       <div class="entry-info">
-         <div class="category">
-           <img src="../images/category-1.png" alt="" />開発日記
-         </div>
-         <div class="title">
-           <h1>Railsで複数のasset_hostを動的に切り替える方法</h1>
-         </div>
-         <div class="post">
-           <div class="tag">
-             <i class="fa fa-tag"></i>asset_sync,rails,ruby
-           </div>
-           <div class="date">
-             Posted on 2014.08.26
-           </div>
-           <div class="author">
-           <img src="../images/author_dummy.png" alt="" />山形 孝造
-           </div>
-         </div>
-
-       </div>
-     </div>
    <% end %>
-   <div class="pager">
+   <div class="pagination">
      <ol>
        <li><a href=""><i class="fa fa-angle-left fa-2x"></i></a></li>
        <li><a href="#">1</a></li>
@@ -67,31 +66,30 @@ title: ハレノヒブログ
        <li><a href=""><i class="fa fa-angle-right fa-2x"></i></a></li>
      </ol>
    </div>
-
   </div>
   <div class="side-contents">
       <div class="advertising">
 
       </div>
-      <div class="side-contents-panel">
-        <div class="side-contents-title">
+      <div class="side-contents__panel">
+        <div class="side-contents__panel__title">
           <i class="fa fa-folder-open fa-fw"></i>カテゴリ一覧
         </div>
-          <div class="side-contents-list">
+          <div class="side-contents__panel__list">
             <ul>
-              <li class="side-contents-list__item release"><a href="#">リリース情報</a></li>
-              <li class="side-contents-list__item develop"><a href="#">開発日記</a></li>
-              <li class="side-contents-list__item design"><a href="#">森田の修行（デザイン）</a></li>
-              <li class="side-contents-list__item others"><a href="#">その他</a></li>
-              <li class="side-contents-list__item training"><a href="#">富山の修行</a></li>
+              <li class="side-contents__panel__list__item label-release"><a href="#">リリース情報</a></li>
+              <li class="side-contents__panel__list__item label-develop"><a href="#">開発日記</a></li>
+              <li class="side-contents__panel__list__item label-design"><a href="#">森田の修行（デザイン）</a></li>
+              <li class="side-contents__panel__list__item label-others"><a href="#">その他</a></li>
+              <li class="side-contents__panel__list__item label-training"><a href="#">富山の修行</a></li>
             </ul>
           </div>
       </div>
-    <div class="side-contents-panel">
-      <div class="side-contents-title">
+    <div class="side-contents__panel">
+      <div class="side-contents__panel__title">
         <i class="fa fa-tag fa-fw"></i>タグ一覧
       </div>
-      <div class="tag-list">
+      <div class="side-contents__panel__tag-list">
         <ol>
           <li><a href="#"><img src="../images/tag_dummy.png" alt="" /></a></li>
           <li><a href="#"><img src="../images/tag_dummy.png" alt="" /></a></li>
@@ -117,22 +115,22 @@ title: ハレノヒブログ
         </ol>
       </div>
     </div>
-    <div class="side-contents-panel">
-      <div class="side-contents-title">
+    <div class="side-contents__panel">
+      <div class="side-contents__panel__title">
         <i class="fa fa-twitter fa-fw"></i>Twitter
       </div>
-      <div class="timeline">
+      <div class="side-contents__panel__timeline">
         <a class="twitter-timeline" href="https://twitter.com/halenohi_jp" data-widget-id="608548439928864768">@halenohi_jpさんのツイート</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
-    <div class="side-contents-panel">
-      <div class="side-contents-title">
+    <div class="side-contents__panel">
+      <div class="side-contents__panel__title">
         <img src="../images/staart.png" alt="" />Staart
       </div>
-      <div class="timeline">
+      <div class="side-contents__panel__timeline">
         <a class="twitter-timeline" href="https://twitter.com/staartjp" data-widget-id="608572772965416962">@staartjpさんのツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
   </div>
