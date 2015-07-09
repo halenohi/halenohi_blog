@@ -37,6 +37,12 @@
     .side-contents__panel__list__item {
       margin-top: 12px;
       padding-left: 9px;
+
+      a {
+        display: inline-block;
+        width: 330px;
+        height: 30px;
+      }
     }
 
       .label-release {
