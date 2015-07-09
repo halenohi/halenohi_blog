@@ -19,11 +19,20 @@
   padding-right: 12px;
   padding-left: 12px;
 
+ &:first-child {
+   width: 18px;
+ }
   &:nth-child(2){
-    width: 18px;
+    width: 29px;
+    text-align: center;
   }
-  
+
   a {
     padding: 9px;
+    color: #b6b6b6;
+
+    &:hover {
+    color:#25aee7;
+    }
   }
 }
