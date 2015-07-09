@@ -1,4 +1,4 @@
-.side-contents {
+.side-container {
   width: 330px;
   margin-top: 30px;
   float: right;
@@ -12,15 +12,18 @@
   background :gray;
 }
 
-.side-contents__panel {
+.side-container__box {
   @include pie-clearfix;
   margin-top: 24px;
 
-  .side-contents__panel__title {
+  hr.divider {
+    width: 100%;
+    margin-top: 16px;
+  }
+  .box-head {
     padding-bottom: 9px;
-    border-bottom: solid 1px #000;
 
-    .fa-fw {
+   .fa-fw {
       padding-right: 12px;
     }
 
@@ -30,13 +33,13 @@
     }
   }
 
-  .side-contents__panel__list {
+  .box__list {
     font-size: 14px;
     line-height: 2.0;
 
-    .side-contents__panel__list__item {
-      margin-top: 12px;
-      padding-left: 9px;
+     li{
+       margin-top: 12px;
+       padding-left: 9px;
 
       a {
         display: inline-block;
@@ -44,29 +47,30 @@
         height: 30px;
       }
     }
-
-      .label-release {
-        border-left: 14px solid #ff6f76;
-      }
-
-      .label-develop {
-        border-left: 14px solid #62c9eb;
-      }
-
-      .label-design {
-        border-left: 14px solid #ff9969;
-      }
-
-      .label-others {
-        border-left: 14px solid #ffe581;
-      }
-
-      .label-training {
-        border-left: 14px solid #13ad67;
-      }
   }
 
-  .side-contents__panel__tag-list {
+.label-red {
+  border-left: 14px solid #ff6f76;
+}
+
+.label-blue {
+  border-left: 14px solid #62c9eb;
+}
+
+.label-orange {
+  border-left: 14px solid #ff9969;
+}
+
+.label-yellow {
+  border-left: 14px solid #ffe581;
+}
+
+.label-green {
+  border-left: 14px solid #13ad67;
+}
+
+
+  .box__tag-list {
     height: 200px;
 
     li {
@@ -78,8 +82,15 @@
     }
   }
 
-  .side-contents__panel__timeline {
+  .side-container__box__timeline {
     padding-top: 24px;
   }
+}
 
+.staart {
+
+  img{
+   margin-right: 6px;
+   vertical-align: middle;
+  }
 }

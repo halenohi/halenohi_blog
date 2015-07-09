@@ -3,59 +3,50 @@ title: ハレノヒブログ
 ---
 
 <div class="container">
-  <div class="main-contents">
-   <div class="main-contents__entry">
-     <div class="main-contents__entry__eyecatch">
+  <div class="main-container">
+   <div class="card">
+     <!--<div class="main-container__card__eyecatch">-->
        <a href=""><img src="..//images/entry_img1.png" alt="" /></a>
-     </div>
-     <div class="main-contents__entry__info">
-       <div class="main-contents__entry__info__category">
+     <div class="card__box">
+       <div class="card__box__category">
          <a href="#"><img src="../images/category-1.png" alt="" />開発日記</a>
        </div>
-       <div class="main-contents__entry__info__title">
          <h1><a href="single.html">Railsで複数のasset_hostを動的に切り替える方法</a></h1>
-       </div>
-       <div class="main-contents__entry__info__post">
-         <div class="main-contents__entry__info__post__tag">
+         <hr class="divider">
+
+         <div class="pull-left">
            <i class="fa fa-tag"></i><a href="#">asset_sync</a>,<a href="#">rails</a>,<a href="#">ruby</a>
          </div>
-         <div class="main-contents__entry__info__post__date">
+         <div class="pull-right">
            Posted on 2014.08.26
-         </div>
-         <div class="main-contents__entry__info__post__author">
          <a href="#"><img src="../images/author_dummy.png" alt="" />山形 孝造</a>
-         </div>
-       </div>
-     </div>
-   </div>
-   <% 5.times do %>
-   <div class="main-contents__entry">
-     <div class="main-contents__entry__eyecatch">
-       <a href=""><img src="..//images/entry_img1.png" alt="" /></a>
-     </div>
-     <div class="main-contents__entry__info">
-       <div class="main-contents__entry__info__category">
-         <a href="#"><img src="../images/category-1.png" alt="" />開発日記</a>
-       </div>
-       <div class="main-contents__entry__info__title">
-         <h1><a href="single.html">Railsで複数のasset_hostを動的に切り替える方法</a></h1>
-       </div>
-       <div class="main-contents__entry__info__post">
-         <div class="main-contents__entry__info__post__tag">
-           <i class="fa fa-tag"></i><a href="#">asset_sync</a>,<a href="#">rails</a>,<a href="#">ruby</a>
-         </div>
-         <div class="main-contents__entry__info__post__date">
-           Posted on 2014.08.26
-         </div>
-         <div class="main-contents__entry__info__post__author">
-         <a href="#"><img src="../images/author_dummy.png" alt="" />山形 孝造</a>
-         </div>
        </div>
 
      </div>
    </div>
+   <% 5.times do %>
+   <div class="card">
+       <a href=""><img src="..//images/entry_img1.png" alt="" /></a>
+     <div class="card__box">
+       <div class="card__box__category">
+         <a href="#"><img src="../images/category-1.png" alt="" />開発日記</a>
+       </div>
+         <h1><a href="single.html">Railsで複数のasset_hostを動的に切り替える方法</a></h1>
+         <hr class="divider">
+
+         <div class="pull-left">
+           <i class="fa fa-tag"></i><a href="#">asset_sync</a>,<a href="#">rails</a>,<a href="#">ruby</a>
+         </div>
+         <div class="pull-right">
+           Posted on 2014.08.26
+         <a href="#"><img src="../images/author_dummy.png" alt="" />山形 孝造</a>
+       </div>
+
+
+     </div>
+   </div>
    <% end %>
-   <div class="pagination">
+   <nav class="pagination">
      <ol>
        <li><!--<i class="fa fa-angle-left fa-2x"></i>--></li>
        <li>1</li>
@@ -65,31 +56,33 @@ title: ハレノヒブログ
        <li><a href="#">5</a></li>
        <li><a href=""><i class="fa fa-angle-right fa-2x"></i></a></li>
      </ol>
-   </div>
+   </nav>
   </div>
-  <div class="side-contents">
+  <div class="side-container">
       <div class="advertising">
 
       </div>
-      <div class="side-contents__panel">
-        <div class="side-contents__panel__title">
+      <div class="side-container__box">
+        <div class="box__head">
           <i class="fa fa-folder-open fa-fw"></i>カテゴリ一覧
         </div>
-          <div class="side-contents__panel__list">
+        <hr class="divider">
+          <div class="box__list">
             <ul>
-              <li class="side-contents__panel__list__item label-release"><a href="#">リリース情報</a></li>
-              <li class="side-contents__panel__list__item label-develop"><a href="#">開発日記</a></li>
-              <li class="side-contents__panel__list__item label-design"><a href="#">森田の修行（デザイン）</a></li>
-              <li class="side-contents__panel__list__item label-others"><a href="#">その他</a></li>
-              <li class="side-contents__panel__list__item label-training"><a href="#">富山の修行</a></li>
+              <li class="label-red"><a href="#">リリース情報</a></li>
+              <li class="label-blue"><a href="#">開発日記</a></li>
+              <li class="label-orange"><a href="#">森田の修行（デザイン）</a></li>
+              <li class="label-yellow"><a href="#">その他</a></li>
+              <li class="label-green"><a href="#">富山の修行</a></li>
             </ul>
           </div>
       </div>
-    <div class="side-contents__panel">
-      <div class="side-contents__panel__title">
+    <div class="side-container__box">
+      <div class="box__head">
         <i class="fa fa-tag fa-fw"></i>タグ一覧
       </div>
-      <div class="side-contents__panel__tag-list">
+      <hr class="divider">
+      <div class="box__tag-list">
         <ol>
           <li><a href="#"><img src="../images/tag_dummy.png" alt="" /></a></li>
           <li><a href="#"><img src="../images/tag_dummy-2.png" alt="" /></a></li>
@@ -115,20 +108,22 @@ title: ハレノヒブログ
         </ol>
       </div>
     </div>
-    <div class="side-contents__panel">
-      <div class="side-contents__panel__title">
+    <div class="side-container__box">
+      <div class="box__head">
         <i class="fa fa-twitter fa-fw"></i>Twitter
       </div>
-      <div class="side-contents__panel__timeline">
+      <hr class="divider">
+      <div class="side-container__box__timeline">
         <a class="twitter-timeline" href="https://twitter.com/halenohi_jp" data-widget-id="608548439928864768">@halenohi_jpさんのツイート</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
-    <div class="side-contents__panel">
-      <div class="side-contents__panel__title">
+    <div class="side-container__box">
+      <div class="box__head staart">
         <img src="../images/staart.png" alt="" />Staart
       </div>
-      <div class="side-contents__panel__timeline">
+      <hr class="divider">
+      <div class="side-container__box__timeline">
         <a class="twitter-timeline" href="https://twitter.com/staartjp" data-widget-id="608572772965416962">@staartjpさんのツイート</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
