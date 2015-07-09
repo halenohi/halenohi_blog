@@ -1,5 +1,38 @@
 .card {
   @include pie-clearfix;
+  position: relative;
+  margin: 0 0 40px 0;
+  min-height: $card_figure_width;
+  background-color: #fff;
+}
+
+.card__figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__content {
+  margin: 0 0 0 $card_figure_width;
+  padding: 20px;
+}
+
+.card__content-footer {
+  position: absolute;
+  left: $card_figure_width + 20px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 13px;
+
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+
+
+/*
+.card {
+  @include pie-clearfix;
   width :692px;
   margin-top: 30px;
 

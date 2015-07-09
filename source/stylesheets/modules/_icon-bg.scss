@@ -1,0 +1,19 @@
+.icon-bg {
+  display: inline-block;
+  width: $icon_default_size;
+  height: $icon_default_size;
+}
+
+.icon-bg--blue-circle {
+  @extend .icon-bg;
+  @include border-radius(50%);
+  background-color: blue;
+  color: #fff;
+
+  .fa {
+    @include translate(-40%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+}

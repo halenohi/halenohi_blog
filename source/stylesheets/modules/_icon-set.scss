@@ -1,0 +1,18 @@
+.icon-set {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 10px 0;
+  min-height: $icon_default_size;
+}
+
+.icon-set__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-set__text {
+  display: block;
+  margin: 0 0 0 31px;
+  padding: 8px 0 0 10px;
+}

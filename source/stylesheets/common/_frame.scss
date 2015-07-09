@@ -17,3 +17,26 @@ a:visited {
   margin: 0 auto;
   clear: both;
 }
+
+.main-container {
+  @include pie-clearfix;
+  width: 692px;
+}
+
+.side-container {
+  width: 330px;
+  margin-top: 30px;
+  font-size :16px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  @include pie-clearfix;
+}
