@@ -1,69 +1,10 @@
-.article {
-  width: 1110px;
-  margin-top: 36px;
-  padding-bottom: 40px;
-  background: white;
-}
-
-.article__info {
+.single-container__header {
   width: 660px;
   margin: 0 auto;
 }
 
-.article__info__date {
-  padding-top: 32px;
-  font-size: 14px;
-  color: #aaaaaa
-}
-
-.article__info__title {
-  margin-top: 27px;
-  margin-bottom: 27px;
-  font-size: 28px;
-  text-align: center;
-}
-
-.article__info__col {
-  height: 31px;
-  padding-bottom: 15px;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.article__info__col__category {
-  float: left;
-
-    img {
-      margin-right: 9px;
-      vertical-align: middle;
-    }
-}
-
-.article__info__col__tag {
-  float: left;
-  margin-left: 16px;
-  padding-top: 7px;
-
-  .fa-tag {
-    padding-right: 9px;
-  }
-}
-
-.article__author {
-  width: 660px;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: solid 1px #000;
-
-    img {
-      margin-right: 12px;
-      vertical-align: middle;
-    }
-}
-
-.article__contents {
-  width: 660px;
+.single-container__body {
+  width: $single_content_width;
   margin: 40px auto;
   font-size: 16px;
   line-height: 1.8;
@@ -83,18 +24,18 @@
     }
 }
 
-.article__contents__img {
+.single-container__body__img {
   margin: 60px;
   text-align: center;
 }
 
-.panel {
-  width: 660px;
+.single-container__footer {
+  width: $single_content_width;
   margin: 0 auto;
   padding-top: 60px;
 }
 
-.panel__sns {
+.sns {
   height: 150px;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
@@ -123,52 +64,30 @@
   }
 }
 
-.panel__recent-post {
+.post-box {
+  @include pie-clearfix;
+  width: 330px;
   margin-top: 42px;
-  border-bottom: solid 1px #000;
+  float: left;
+  display: table;
 
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 6px;
-    padding-bottom: 32px;
+  a {
+    width: 226px;
+    float: right;
   }
-}
-
-.panel__recent-post__author {
-    text-align: center;
-    padding-bottom: 32px;
 
   img {
     padding-bottom: 18px;
-  }
-}
-
-.panel__recent-post__list {
-  height: 280px;
-}
-
-.panel__recent-post__list__entry {
-  width: 330px;
-  height: 90px;
-  margin-top: 32px;
-  float: left;
-
-  img {
     float: left;
-    vertical-align: middle;
   }
 }
 
-.recent-post__list__entry__title {
-  width: 200px;
-  float: right;
+.box__taglist {
+  width: 660px;
   padding: 0 12px;
-}
-
-.panel__taglist {
-
+  margin: 0 auto;
+  clear: both;
+  
   h2 {
     font-size: 18px;
     font-weight: bold;

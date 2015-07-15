@@ -6,7 +6,7 @@
   background :gray;
 }
 
-.side-container__box {
+.box {
   @include pie-clearfix;
   margin-top: 24px;
 
@@ -14,7 +14,7 @@
     width: 100%;
     margin-top: 16px;
   }
-  .box-head {
+  .box-header {
     padding-bottom: 9px;
 
    .fa-fw {
@@ -27,7 +27,7 @@
     }
   }
 
-  .box__list {
+  .box__body {
     font-size: 14px;
     line-height: 2.0;
 
