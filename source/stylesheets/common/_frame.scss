@@ -38,18 +38,6 @@ a:visited {
   background: white;
 }
 
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .clearfix {
   @include pie-clearfix;
 }
